@@ -1,40 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import './MouseNeon.css'; // Estilo CSS para o efeito neon
+import './MouseNeon.css';
 
 const MouseNeon = () => {
   const [style, setStyle] = useState({});
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (event) => {
-      // Define o atraso
-      const delay = 15;
       
-      // Calcula as coordenadas do mouse com um leve atraso
-      const x = event.clientX; // Ajuste opcional para o centro do elemento
-      const y = event.clientY; // Ajuste opcional para o centro do elemento
+      const x = event.pageX;
+      const y = event.pageY;
       
-      // Atualiza o estilo com o atraso
       const newStyle = {
         left: `${x}px`,
         top: `${y}px`,
       };
 
-      // Aplica o atraso
-      setTimeout(() => {
-        setStyle(newStyle);
-      }, delay);
+      setIsVisible(true);
+      setStyle(newStyle);
     };
-
+    
+    const handleMouseLeave = () => {
+      setIsVisible(false);
+    };
+    
     // Adiciona o event listener para seguir o mouse
     document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseleave', handleMouseLeave);
 
     // Remove o event listener quando o componente é desmontado
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []); // Executa somente uma vez após a montagem do componente
 
-  return <div className="neon-circle" style={style}></div>;
+  return isVisible ? <div className={"neon-circle"} style={style}></div> : null;
 };
 
 export default MouseNeon;

@@ -1,9 +1,9 @@
 .neon-circle {
     border-radius: 50%;
     position: absolute;
-    pointer-events: none; /* Para evitar interrupção do evento de mouse */
+    pointer-events: none;
     box-shadow: 0 0 10px 0px #fff, 0 0 20px 5px #00f9ff, 0 0 40px 10px #00f9ff, 0 0 80px 20px #00f9ff;
-    animation: glow 1.5s infinite alternate; /* Animação do efeito neon */
+    animation: glow 1.5s infinite alternate;
   }
   
   @keyframes glow {

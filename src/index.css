@@ -1,16 +1,54 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Candu';
+  src: local('Candu'), url(././assets/fonts/candu/Candu.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: local('LemonMilk'), url(././assets/fonts/LemonMilk/LEMONMILK-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'LemonMilk-italic';
+  src: local('LemonMilk-italic'), url(././assets/fonts/LemonMilk/LEMONMILK-BoldItalic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Akira';
+  src: local('Akira'), url(././assets/fonts/Akira\ Expanded\ Demo.otf) format('opentype');
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
 body {
-  margin: 0;
-  padding: 0;
-  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-primary);
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul, li, a{
+  color: var(--white);
+  list-style: none;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+

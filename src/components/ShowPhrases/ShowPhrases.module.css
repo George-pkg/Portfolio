@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.homeTitle {
+    text-align: left;
+    color: white;
+    font-family: LemonMilk-italic;
+}
+  
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
