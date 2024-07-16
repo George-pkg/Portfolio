@@ -1,9 +1,9 @@
-import ShowPhrases from "../../../components/ShowPhrases/ShowPhrases";
+import ShowPhrases from "../ShowPhrases/ShowPhrases";
 import styles from './Home.module.css'
 
-function Home(id) {
+function Home() {
     return (
-      <main id={id} className={styles.home} >
+      <main className={styles.home} >
         <h1 className={styles.homeTitle}>
           <ShowPhrases phrases={["Olá", "Hello", "Hola", "こんにちは"]}/>
           <br />me chamo<br/>

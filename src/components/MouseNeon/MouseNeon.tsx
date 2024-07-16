@@ -6,7 +6,7 @@ const MouseNeon = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       
       const x = event.pageX;
       const y = event.pageY;
@@ -24,11 +24,9 @@ const MouseNeon = () => {
       setIsVisible(false);
     };
     
-    // Adiciona o event listener para seguir o mouse
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseleave', handleMouseLeave);
 
-    // Remove o event listener quando o componente é desmontado
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseleave', handleMouseLeave);

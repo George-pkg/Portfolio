@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.waveBorder {
+  height: 150px;
+  overflow: hidden;
+}
+  
+.waveBorder svg {
+  height: 100%; 
+  width: 100%;
+}
+
+.path {
+  stroke: none;
+  /* fill: #5A189A; */
+  fill: var(--secondary-color);
+}
+
+.border {
+  stroke: #b0b0b0;
+  fill: none;
+  display: none;
+}

@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from './ShowPhrases.module.css'
 
-export default function ShowPhrases({phrases = []}) {
+interface ShowPhrasesProps {
+  phrases: Array<String>; 
+}
+
+export default function ShowPhrases({phrases = []}: ShowPhrasesProps) {
 
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [showPhrase, setShowPhrase] = useState(true);
