@@ -1,4 +1,4 @@
-import ShowPhrases from "../ShowPhrases/ShowPhrases";
+import ShowPhrases from "../../../components/ShowPhrases/ShowPhrases";
 import styles from './Home.module.css'
 
 function Home() {

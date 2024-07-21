@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.projects {
+  min-height: 90vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collum {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.collum div {
+  height: 280px;
+  width: 400px;
+  background-color: var(--tertiary-color);
+}
