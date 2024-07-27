@@ -16,9 +16,9 @@
   color: var(--tertiary-color);
 }
   
-.text{
+.text {
   font-size: 2.5em;
-  width: 70%;
+  width: 76%;
   color: var(--color-paragraph);
 }
   
@@ -26,13 +26,20 @@
   color: white;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 470px) {
   .text {
-    font-size: 1.8em;
-    width: 80%;
+    font-size: 4.7vw;
+    width: 90%;
   }
 
   .title {
     font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 470px) {
+  .text {
+    font-size: 3.55vw;
+    width: 90%;
   }
 }

@@ -32,3 +32,10 @@
 .link:hover {
   color: var(--white);
 }
+
+@media (max-width: 400px) {
+  .link {
+    padding: 1.2rem;
+  }
+  
+}

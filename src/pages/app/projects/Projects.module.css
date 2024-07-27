@@ -19,3 +19,23 @@
   width: 400px;
   background-color: var(--tertiary-color);
 }
+
+.collum div:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  .collum div {
+    height: 280px;
+    width: 350px;
+    background-color: var(--tertiary-color);
+    margin: 0px 15px 30px 15px;
+  }
+
+  .collum {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

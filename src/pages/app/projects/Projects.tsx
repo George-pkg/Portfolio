@@ -7,10 +7,6 @@ export default function Projects() {
         <div></div>
         <div></div>
       </div>
-      <div className={styles.collum}>
-        <div></div>
-        <div></div>
-      </div>
     </div>
   );
 }
