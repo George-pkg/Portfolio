@@ -1,27 +1,35 @@
 @charset "UTF-8";
 
 .projects {
-  min-height: 90vh;
-  width: 100%;
+  height: 450px;
   background-color: var(--primary-color);
+  overflow: hidden;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .collum {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .collum div {
+  align-self: center;
+  transition: 0.4s;
   height: 280px;
   width: 400px;
-  background-color: var(--tertiary-color);
+  background-color: #234870;
+
 }
 
 .collum div:hover {
+  background-color: #8CB0D9;
+  transform: scale(1.2);
   cursor: pointer;
+  z-index: 2;
 }
 
 @media (max-width: 880px) {
@@ -39,3 +47,10 @@
     justify-content: space-around;
   }
 }
+
+/*
+display: flex;
+gap: 3.75rem;
+flex-wrap: wrap;
+align-items: center;
+*/
