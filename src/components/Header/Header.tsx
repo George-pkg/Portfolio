@@ -8,7 +8,7 @@ export default function Header() {
         <ul id="nav-menu" className={styles.navMenu}>
             <li><a href="#about" className={styles.link}>Quem sou</a></li>
             <li><a href="#projects" className={styles.link}>Projetos</a></li>
-            <li><a href="#contat" className={styles.link}>Contato</a></li>
+            <li><a href="#contat" className={styles.link}>Contatos</a></li>
         </ul>
       </nav>
     </header>

@@ -1,11 +1,11 @@
 import MouseNeon from '../../components/MouseNeon/MouseNeon';
 import Header from '../../components/Header/Header';
 import Home from './Home/Home';
-import styles from './App.module.css'
 import WaveBordertop from '../../components/waveBorder/WaveBorderTop/WaveBorderTop';
 import WaveBorderBottom from '../../components/waveBorder/WaveBorderBottom/WaveBorderBottom';
-import About from './about/About';
-import Projects from './projects/Projects';
+import About from './About/About';
+import Projects from './Projects/Projects';
+import Footter from './Footer/Footer';
 
 function App() {
 
@@ -18,9 +18,7 @@ function App() {
       <Projects />
       <WaveBordertop />
       <WaveBorderBottom />
-      <footer id='contat'>
-
-      </footer>
+      <Footter />
     </div>
   );
 }
