@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: 'Candu';
-  src: local('Candu'), url(././assets/fonts/candu/Candu.ttf) format('truetype');
-}
-
-@font-face {
   font-family: 'LemonMilk';
   src: local('LemonMilk'), url(././assets/fonts/LemonMilk/LEMONMILK-Bold.otf) format('opentype');
 }
@@ -15,24 +10,19 @@
   src: local('LemonMilk-italic'), url(././assets/fonts/LemonMilk/LEMONMILK-BoldItalic.otf) format('opentype');
 }
 
-@font-face {
-  font-family: 'Akira';
-  src: local('Akira'), url(././assets/fonts/Akira\ Expanded\ Demo.otf) format('opentype');
-}
-
 :root {
   --primary-color:#0D1926;
   --secondary-color:#1A324C;
   --tertiary-color: #8CB0D9;
   /* --quarter-color: #5A189A; */
+  /* gray == #212121 */
+  /* "black" == #212121 */
 
   --white:#ffff;
   --black: #000000;
   --gray:#b0b0b0;
   --color-paragraph:#CFD8E2;
   
-  --border-bottom:0.1px solid rgba(255, 255, 255, 0.150);
-  --padding:9.6rem;
   font-size: 62.5%;
 }
 
@@ -49,11 +39,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-color);
   box-sizing: border-box;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 ul, li, a{

@@ -22,7 +22,6 @@
   height: 280px;
   width: 400px;
   background-color: #234870;
-
 }
 
 .collum div:hover {
@@ -34,9 +33,8 @@
 
 @media (max-width: 880px) {
   .collum div {
-    height: 280px;
+    height: 230px;
     width: 350px;
-    background-color: var(--tertiary-color);
     margin: 0px 15px 30px 15px;
   }
 
@@ -45,6 +43,10 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .projects {
+    height: 510px;
   }
 }
 
