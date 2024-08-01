@@ -1,5 +1,33 @@
 @charset "UFT-8";
 
 .footer {
-  height: 150px;
+  display: flex;
+  height: 180px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 4em;
+  color: var(--white);
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  height: 64px;
+  width: 450px;
+  overflow: hidden;
+}
+
+.icon {
+
+}
+
+.img {
+  height: 64px;
 }
