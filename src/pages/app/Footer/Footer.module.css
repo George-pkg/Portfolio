@@ -2,14 +2,15 @@
 
 .footer {
   display: flex;
-  height: 180px;
+  height: 250px;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 100px;
+  justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .title {
+  width: 100%;
   font-size: 4em;
   color: var(--white);
   text-align: center;
@@ -19,15 +20,50 @@
   display: flex;
   align-self: center;
   justify-content: space-evenly;
-  height: 64px;
-  width: 450px;
+  width: 760px;
   overflow: hidden;
+  padding: 20px 0px 20px 0px;
 }
 
 .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  height: 120px;
+}
 
+.icon h2 {
+  color: white;
+  text-align: center;
+}
+.icon .subtitle {
+  color: gray;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .img {
   height: 64px;
+  width: 64px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    height: auto;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .icon {
+    margin: 20px;
+  }
+  
 }

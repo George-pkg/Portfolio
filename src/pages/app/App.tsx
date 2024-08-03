@@ -1,4 +1,3 @@
-import MouseNeon from '../../components/MouseNeon/MouseNeon';
 import Header from '../../components/Header/Header';
 import Home from './Home/Home';
 import WaveBordertop from '../../components/waveBorder/WaveBorderTop/WaveBorderTop';
@@ -11,7 +10,6 @@ function App() {
 
   return (
     <div>
-      <MouseNeon />
       <Header />
       <Home />
       <About />

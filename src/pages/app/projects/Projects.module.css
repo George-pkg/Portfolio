@@ -24,7 +24,8 @@
   background-color: #234870;
 }
 
-.collum div:hover {
+.collum div:hover,
+.collum div:focus {
   background-color: #8CB0D9;
   transform: scale(1.2);
   cursor: pointer;
@@ -49,10 +50,3 @@
     height: 510px;
   }
 }
-
-/*
-display: flex;
-gap: 3.75rem;
-flex-wrap: wrap;
-align-items: center;
-*/
