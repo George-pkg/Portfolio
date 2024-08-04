@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
 .about {
+
   min-height: 400px;
   max-height: 60vh;
   background-color: var(--secondary-color);
+}
+
+.container {
+  transform: translateX(-120px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  opacity: 0;
 }
   
 .title {

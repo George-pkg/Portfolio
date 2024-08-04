@@ -7,9 +7,11 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 120px;
+  transform: translateX(-120px);
+  opacity: 0;
 }
 
-.title {
+.titleContacts {
   width: 100%;
   font-size: 4em;
   color: var(--white);

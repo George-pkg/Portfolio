@@ -2,11 +2,20 @@
 
 .projects {
   height: 450px;
-  background-color: var(--primary-color);
   overflow: hidden;
   width: 100%;
   display: flex;
   align-content: space-around;
+  flex-wrap: wrap;
+  transform: translateX(-120px);
+  opacity: 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--tertiary-color);
+  font-size: 5em;
+  width: 100%;
 }
 
 .collum {
@@ -36,7 +45,7 @@
   .collum div {
     height: 230px;
     width: 350px;
-    margin: 0px 15px 30px 15px;
+    margin: 19px 15px 19px 15px;
   }
 
   .collum {
@@ -47,6 +56,10 @@
   }
 
   .projects {
-    height: 510px;
+    height: 600px;
+  }
+
+  .collum div:focus {
+    transform: scale(1.15);
   }
 }
